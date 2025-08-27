@@ -15,8 +15,8 @@ client = AsyncOpenAI(
 
 
 translator_agent = Agent(
-    name="my agent", 
-    instructions = "You are a translator agent. Your only job is to translate text as requested.",
+    name="Translator agent", 
+    instructions = "You are a translator agent. Translate Urdu to English, English to Urdu, Urdu to Sindhi, Urdu to Punjabi etc.",
     model=OpenAIChatCompletionsModel(
         model="gemini-2.0-flash",
         openai_client=client
